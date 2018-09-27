@@ -1,0 +1,11 @@
+
+.star .star-img{
+  width: 22rpx;
+  height: 22rpx;
+  margin-right: 6rpx;
+}
+.star .star-text{
+  font-size: 23rpx;
+  color: #333;
+  margin-left: 10rpx;
+}

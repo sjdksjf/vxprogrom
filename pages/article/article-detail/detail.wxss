@@ -1,0 +1,77 @@
+.article-detail{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rpx;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.detail-header{
+  padding: 20rpx 0; 
+}
+.detail-header .detail-header-img{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+}
+.detail-header .detail-header-time{
+  color: #555;
+  font-size: 20rpx;
+}
+.detail-title{
+  padding: 20rpx 10rpx 20rpx;
+  color: #333;
+  font-size: 35rpx;
+}
+.music{
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  top: 160rpx;
+  left: 50%;
+  margin-left: -100rpx;
+}
+.detail-operation{
+  height: 60rpx;
+  border-bottom: 1rpx solid #ddd;
+  position: relative;
+  margin: 0 20rpx 50rpx 20rpx;
+}
+.detail-operation image{
+  position: absolute;
+  top: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.detail-operation .img1{
+  right:150rpx
+}
+.detail-operation .img2{
+  right:50rpx;
+}
+.detail-img{
+  width: 100%;
+}
+.detail-content{
+  color: #444;
+  font-size: 30rpx;
+  text-indent: 2em;
+  letter-spacing: 3rpx;
+  padding: 20rpx;
+}
+.detail-foot{
+  padding-left: 20rpx;
+  padding-bottom: 20rpx;
+}
+.detail-foot image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.detail-foot text{
+  font-size: 30rpx;
+  color: #444;
+  margin-right: 20rpx;
+}

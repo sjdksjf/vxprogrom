@@ -1,0 +1,25 @@
+
+<import src="./article-item-template/article-item-template.wxml"/>
+<view>
+  <swiper class="swiper" indicator-dots="true" autoplay="true" 
+    indicator-color="white" indicator-active-color="blue">
+      <swiper-item>
+        <image src="/images/carousel/a.jpg" class="slide-image"/>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/carousel/c.jpg" class="slide-image"/>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/carousel/e.jpg" class="slide-image"/>
+      </swiper-item>
+  </swiper>
+ <!-- block为循环赋值 -->
+  <block wx:for="{{article}}" wx:for-item="item" wx:key="index">
+  <view catchtap='tapArticleDetail' data-itemId="{{item.itemId}}">
+  <!-- 此处传的参数为wx:for-item设置的名称 默认为item article为数组 item就是数组的每一个对象 两种形式传参 一种是用赋值的方法item赋给item 模板处使用item.xxx来获取值 另一种为解构赋值把数组的每个item对象里面的参数传进去 模板处直接使用对象里面的参数xxx来获取值 -->
+    <!-- <template is="articleItem" data="{{item:item}}"/> -->
+    <template is="articleItem" data="{{...item}}" />
+  </view>
+  </block>
+</view>
+

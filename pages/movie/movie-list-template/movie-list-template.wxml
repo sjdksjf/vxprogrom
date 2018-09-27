@@ -1,0 +1,9 @@
+<import src="../movie-item-template/movie-item-template.wxml" />
+<template name="listTemplate">
+<view class='list'>
+<!-- 传的参数为多个 模板只有一个时 传的参数用赋值的方法将 多个值赋给一个属性 然后在一个模板用同样的属性传递 该模板就能接收到多个参数 -->
+  <block wx:for="{{movie}}" wx:key="{{index}}">
+  <template is="itemTemplate" data="{{...item}}"/>
+  </block>
+</view>
+</template>

@@ -1,0 +1,8 @@
+<import src="../star-template/star-template.wxml"/>
+<template name="itemTemplate">
+<view class='item'>
+  <image class="item-img" src='{{coverImg}}'></image>
+  <text class="item-title" >{{title}}</text>
+  <template is="starTemplate" data="{{score:score,stars:stars}}"/>
+</view>
+</template>

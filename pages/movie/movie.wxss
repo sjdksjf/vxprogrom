@@ -1,0 +1,18 @@
+@import './movie-list-template/movie-list-template.wxss';
+.movie{
+  padding: 20rpx 0;
+}
+.movie-box{
+  padding-bottom: 30rpx;
+}
+.movie-head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10rpx;
+}
+.movie-box .movie-title,
+.movie-box .movie-more{
+  color: #333;
+  font-size: 35rpx;
+}

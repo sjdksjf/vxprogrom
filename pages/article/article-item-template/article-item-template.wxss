@@ -1,0 +1,48 @@
+.article-item{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rpx;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.article-header .article-header-img{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+}
+.article-header .article-header-time{
+  color: #555;
+  font-size: 20rpx;
+}
+.article-title{
+  padding: 20rpx 10rpx;
+  color: #333;
+  font-size: 35rpx;
+}
+.article-img{
+  width: 100%;
+}
+.article-content{
+  color: #444;
+  font-size: 25rpx;
+  text-indent: 2em;
+  letter-spacing: 3rpx;
+  padding: 20rpx;
+}
+.article-foot{
+  padding-left: 20rpx;
+  padding-bottom: 20rpx;
+}
+.article-foot image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.article-foot text{
+  font-size: 30rpx;
+  color: #444;
+  margin-right: 20rpx;
+}

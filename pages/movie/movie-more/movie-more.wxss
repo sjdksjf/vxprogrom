@@ -1,0 +1,9 @@
+@import '../movie-list-template/movie-list-template.wxss';
+.movie-more .list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap :wrap;
+}
+.movie-more .list .item{
+  margin-bottom: 40rpx;
+}

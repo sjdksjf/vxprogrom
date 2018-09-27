@@ -1,0 +1,25 @@
+<import src="./movie-list-template/movie-list-template.wxml" />
+<view class='movie'>
+  <view class='movie-box'>
+    <view class='movie-head'>
+      <text class='movie-title'>{{inTheatersTag}}</text>
+      <text catchtap='moreTap' class='movie-more' data-tap="{{inTheatersTagType}}">更多></text>
+    </view>
+    <template is="listTemplate" data="{{movie:inTheatersData}}" />
+  </view>
+  <view class='movie-box'>
+    <view class='movie-head'>
+      <text class='movie-title'>{{comingSoonTag}}</text>
+      <text catchtap='moreTap' class='movie-more' data-tap="{{comingSoonTagType}}">更多></text>
+    </view>
+    <template is="listTemplate" data="{{movie:comingSoonData}}" />
+  </view>
+  <view class='movie-box'>
+    <view class='movie-head'>
+      <text class='movie-title'>{{topTag}}</text>
+      <text catchtap='moreTap' class='movie-more' data-tap="{{topTagType}}">更多></text>
+    </view>
+    <template is="listTemplate" data="{{movie:topData}}" />
+  </view>
+ 
+</view>

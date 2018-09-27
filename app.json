@@ -1,0 +1,33 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/article/index",
+    "pages/movie/movie",
+    "pages/article/article-detail/detail",
+    "pages/movie/movie-more/movie-more"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color":"#000",
+    "selectedColor":"#45a455",
+    "backgroundColor":"#fff",
+    "borderStyle":"white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/article/index",
+        "text": "文章"
+      },
+      {
+        "pagePath": "pages/movie/movie",
+        "text": "视频"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+<view class='article-detail'>
+  
+  <image src='{{img}}' class='detail-img'></image>
+  <image wx:if="{{isAudioPlay}}" catchtap='tapMusic' class='music' src='/images/article/pause.png'></image>
+  <image wx:else catchtap='tapMusic' class='music' src='/images/article/music.png'></image>
+  <view class='detail-header'>
+    <image class='detail-header-img' src='{{headerImg}}'></image>
+    <text class='detail-header-time'>{{headerTime}}</text>
+  </view>
+  <text class='detail-title'>{{title}}</text>
+  <view class='detail-operation'>
+    <image wx:if="{{currentCollection}}" catchtap='tapCollection' class='img1' src='/images/article/collection.png'></image>
+    <image wx:else catchtap='tapCollection' class='img1' src='/images/article/collection-none.png'></image>
+    <image catchtap='tapShare' class='img2' src='/images/article/share.png'></image>
+  </view>
+  <text class='detail-content'>{{content}}
+  </text>
+  <view class='detail-foot'>
+    <image class='detail-foot-star' src='{{footStar}}'></image>
+    <text class='like'>{{like}}</text>
+    <image src='{{footEye}}' class='detail-foot-eye'></image>
+    <text class='view'>{{view}}</text>
+  </view>
+</view>
